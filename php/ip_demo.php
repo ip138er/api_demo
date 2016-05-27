@@ -3,7 +3,7 @@
     $datatype = 'text';
     $url = 'http://api.ip138.com/query/?ip='.$ip.'&datatype='.$datatype;
     
-    $header = array('token:00d5cb1fac5dc5cbfe2ff218292a2a45');
+    $header = array('token:00d5cb1fac5dc5cbfe2ff218292a2dfd33');
     echo getData($url,$header);   
     
     function getData($url,$header){  
