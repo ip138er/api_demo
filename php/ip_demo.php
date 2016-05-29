@@ -17,3 +17,16 @@
         curl_close($ch);  
         return $handles;  
     }
+    
+ //js引入页面 callback jsonp回调地址
+    $ip = '117.25.13.123';
+    $uid = 35553;
+    $oid = 2;
+    $token = '00d5cb1fac5dc5cbfe2ff218292a2dfd33';
+    $sign = md5("addr=" + $ip+ "&token=" + $token);
+    $url = 'http://api.ip138.com/query/';
+    //以下是js引入代码，非PHP代码
+    /***
+    /*<script type="text/javascript" src="<?php echo $url.'?ip=118.28.8.8&callback=find&oid'.$oid.'&uid='.$uid.'&sign='.$sign;?>"></script>
+    **/
+    
